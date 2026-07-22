@@ -41,12 +41,12 @@ col_logo, col_titulo = st.columns([1, 5])
 with col_logo:
     # Asegúrate de que el nombre del archivo coincida exactamente con el que subiste a GitHub
     try:
-        st.image("Logo Exporinter AI_Letra Blanca.png", width=180)
+        st.image("Logo.png", width=180)
     except:
         st.write("*(Logo no encontrado)*")
 
 with col_titulo:
-    st.markdown("## RECLAMOS PRESENTADOS • QA REPORT")
+    st.markdown("## BOOKINGS TE")
     st.caption("ORIGEN • EAI • CONSIGNEE • MAWB • HAWB • FBE • PIECES")
 
 st.divider()
@@ -303,7 +303,7 @@ if f1_file and f2_file and f3_file:
             st.download_button(
                 label="📥 Descargar Resultado Excel",
                 data=buffer.getvalue(),
-                file_name="Merge_WebBookings_DesignerBookings.xlsx",
+                file_name="Result_BookingsTE.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
